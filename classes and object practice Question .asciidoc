@@ -1,0 +1,174 @@
++*In[79]:*+
+[source, ipython3]
+----
+class  vehicle:
+    def _init_(self,make,model ,year):
+        self.make = make
+        self.model = model
+        self. year = year
+    def display_info(self):
+        print(f"{self.year} {self.model } {self.make}")
+        
+car1 = Car("Toyota", "Camry", 2022)
+car2 = Car("Ford", "Mustang", 2023)
+car3 =  Car("Honda", "Civic", 2021)
+
+car1.display_info()
+car2.display_info()
+car3.display_info()
+
+----
+
+
++*Out[79]:*+
+----
+2022 Toyota Camry
+2023 Ford Mustang
+2021 Honda Civic
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[38]:*+
+[source, ipython3]
+----
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def display_info(self):
+        print(f"Name: {self.name}\nAge: {self.age}\nGrade: {self.grade}")
+
+# Creating an instance of the Student class
+student1 = Student("Ahmad khan", 23, "A")
+student2 = Student("Zain ali", 24, "B")
+student3 = Student("Sulam sha", 25, "C")
+student4 = Student("Nazeer ahmad", 25, "A")
+student5 = Student("Ahmad sha", 25, "B")
+
+# Accessing and displaying information about the student
+student1.display_info()
+student2.display_info()
+student3.display_info()
+student4.display_info()
+student5.display_info()
+
+
+
+----
+
+
++*Out[38]:*+
+----
+Name: Ahmad khan
+Age: 23
+Grade: A
+Name: Zain ali
+Age: 24
+Grade: B
+Name: Sulam sha
+Age: 25
+Grade: C
+Name: Nazeer ahmad
+Age: 25
+Grade: A
+Name: Ahmad sha
+Age: 25
+Grade: B
+----
+
+
++*In[13]:*+
+[source, ipython3]
+----
+class BankCustomer:
+    def __init__(self, name):
+        self.name = name
+        self.accounts = {}
+
+    def add_account(self, account_type, balance):
+        self.accounts[account_type] = balance
+
+    def display_info(self):
+        print(f"Customer: {self.name}")
+        for account_type, balance in self.accounts.items():
+            print(f"{account_type} Account: {balance}")
+
+customer = BankCustomer("Ahmad Khan")
+customer.add_account("Savings", 5000)
+customer.add_account("Checking", 1000)
+customer.display_info()
+
+----
+
+
++*Out[13]:*+
+----
+Customer: Ahmad Khan
+Savings Account: 5000
+Checking Account: 1000
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+        
+
+        
+----
+
+
++*In[38]:*+
+[source, ipython3]
+----
+class Employee:
+    def __init__(self, name, department, status):
+        self.name = name
+        self.department = department
+        self.status = status
+
+    def display_info(self):
+        print(f"Name: {self.name}\nDepartment: {self.department}\nStatus: {self.status}")
+# Creating an Employee object
+employee1 = Employee("Sir Sajad", "Web Development", "Expert")
+employee2 = Employee("sir zohib",  "Machine learning",  "Expert")
+employee3 = Employee("sir Ahmad",   "machine learning",   "Normal")
+
+# Displaying employee information
+employee1.display_info()
+employee2.display_info()
+employee3.display_info()
+
+
+----
+
+
++*Out[38]:*+
+----
+Name: Sir Sajad
+Department: Web Development
+Status: Expert
+Name: sir zohib
+Department: Machine learning
+Status: Expert
+Name: sir Ahmad
+Department: machine learning
+Status: Normal
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----

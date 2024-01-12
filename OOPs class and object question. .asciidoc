@@ -1,0 +1,250 @@
++*In[9]:*+
+[source, ipython3]
+----
+#oop Concept
+class faculty:
+    def putdata(self):
+        self.id=int(input("enter the faculty  id "))
+        self.name=str(input("Enter the name"))
+        self.salary=float(input("enter the faculty salary "))
+    def display(self):
+        print("faculty  id:",self.id)
+        print("faculty name:",self.name)
+        print("faculty salary:",self.salary)
+a=faculty()
+a.putdata()
+a.display()
+
+----
+
+
++*Out[9]:*+
+----
+enter the faculty  id 56434
+Enter the namekhan
+enter the faculty salary 34678
+faculty  id: 56434
+faculty name: khan
+faculty salary: 34678.0
+----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+class student:
+    def putdata(self):
+        self.rollno=int(input("enter the my roll no "))
+        self.name=str(input("enter my name "))
+        self.session=int(input("enter my session "))
+    def display(self):
+        print("student Roll No :",self.rollno)
+        print("student name :",self.name)
+        print("student session:",self.session)
+a=student()
+a.putdata()
+a.display()
+----
+
+
++*Out[10]:*+
+----
+enter the my roll no 04
+enter my name khan
+enter my session 2023
+student Roll No : 4
+student name : khan
+student session: 2023
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+class library:
+    def  putdata(self):
+        self.id=str(input("Enter a library id" ))
+        self.name=str(input("Enter a department name"))
+        self.rollno=int(input("Enter a library  roll no "))
+    def display(self):
+        print("library id:",self.id)
+        print("department name :",self.name)
+        print("library roll no :",self.rollno)
+        
+a=library()
+a.putdata()
+a.display()
+
+
+----
+
+
++*Out[2]:*+
+----
+Enter a library id345
+Enter a department namecomputer science
+Enter a library  roll no 08
+library id: 345
+department name : computer science
+library roll no : 8
+----
+
+
++*In[16]:*+
+[source, ipython3]
+----
+class Person:
+    def __init__(self,fname,lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+        print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+#x = Person("ahmad", "khan")
+x = Person("Ahmad", "khan")
+x.printname()
+----
+
+
++*Out[16]:*+
+----
+Ahmad khan
+----
+
+
++*In[20]:*+
+[source, ipython3]
+----
+s="hello "
+I=iter
+print(s)
+print(I)
+----
+
+
++*Out[20]:*+
+----
+hello 
+<built-in function iter>
+----
+
+
++*In[23]:*+
+[source, ipython3]
+----
+#how to use the  itrator object  
+mytuple = ("ahmad khan" , "nazeer", "zain")
+myit =iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+----
+
+
++*Out[23]:*+
+----
+ahmad khan
+nazeer
+zain
+----
+
+
++*In[24]:*+
+[source, ipython3]
+----
+mytuple = ("ahmad khan" , "nazeer", "zain")
+myit =iter(mytuple)
+for x in mytuple:
+    print(x)
+----
+
+
++*Out[24]:*+
+----
+ahmad khan
+nazeer
+zain
+----
+
+
++*In[25]:*+
+[source, ipython3]
+----
+#Iterate the characters of a string:
+mystr = "ahmad khan"
+for x in mystr:
+    print(x)
+----
+
+
++*Out[25]:*+
+----
+a
+h
+m
+a
+d
+ 
+k
+h
+a
+n
+----
+
+
++*In[29]:*+
+[source, ipython3]
+----
+#Create an iterator that returns numbers, starting with 1, and each sequence will increase by one (returning 1,2,3,4,5 etc.):
+class mynumber:
+ #def__iter__(self):
+        self.a = 1
+        return self
+  def __next__(self):
+        x = self.a 
+        self.a += 1
+        return x 
+myclass= mynumber()
+myiter = iter(myclass)
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+----
+
+
++*Out[29]:*+
+----
+1
+2
+3
+4
+5
+----
+
+
++*In[28]:*+
+[source, ipython3]
+----
+
+----
+
+
++*Out[28]:*+
+----
+1
+2
+3
+4
+5
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----

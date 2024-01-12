@@ -1,0 +1,138 @@
++*In[8]:*+
+[source, ipython3]
+----
+#Write a Python program to convert radians to degrees.
+import math
+pi_value = math.pi
+print("The value of pi is : ",pi_value)
+
+
+
+----
+
+
++*Out[8]:*+
+----
+The value of pi is :  3.141592653589793
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+#Write a Python program to convert radians to degrees.
+import math
+
+def degrees_to_radians(degrees):
+    radians = degrees * (math.pi / 180)
+    return radians
+
+# Input degrees from the user
+degrees_input = float(input("Enter the angle in degrees: "))
+
+# Convert degrees to radians
+radians_result = degrees_to_radians(degrees_input)
+
+# Display the result
+print(f"{degrees_input} degrees is equal to {radians_result} radians.")
+
+----
+
+
++*Out[6]:*+
+----
+Enter the angle in degrees: 4
+4.0 degrees is equal to 0.06981317007977318 radians.
+----
+
+
++*In[12]:*+
+[source, ipython3]
+----
+import math 
+a= 3.4
+print("the ceil of 3.4 is :", end="")
+print(math.ceil (a))
+print("the floor of 4.3 is :", end="")
+print(math.floor (a))
+----
+
+
++*Out[12]:*+
+----
+the ceil of 3.4 is :4
+the floor of 4.3 is :3
+----
+
+
++*In[14]:*+
+[source, ipython3]
+----
+import math 
+a = 10
+print(" the factorial of 5 is :", end="")
+print(math.factorial (a))
+----
+
+
++*Out[14]:*+
+----
+ the factorial of 5 is :3628800
+----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+import math 
+a=10
+b=20
+print("the  gcd 5 and 15 is : ", end="")
+print(math.gcd(b,a))
+----
+
+
++*Out[19]:*+
+----
+the  gcd 5 and 15 is : 10
+----
+
+
++*In[20]:*+
+[source, ipython3]
+----
+import math 
+num1  = 24
+num2  = 36
+result = math.gcd(num1,num2)
+print(f" the GCD  of {num1} and {num2} is {result}")
+----
+
+
++*Out[20]:*+
+----
+ the GCD  of 24 and 36 is 12
+----
+
+
++*In[21]:*+
+[source, ipython3]
+----
+import math 
+a = -10
+print("the absult value of  -10 is :", end="")
+print(math.gcd(b,a ))
+----
+
+
++*Out[21]:*+
+----
+the absult value of  -10 is :10
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----

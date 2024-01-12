@@ -1,0 +1,55 @@
++*In[22]:*+
+[source, ipython3]
+----
+class A:
+    def display(self):
+        print("Class A")
+    
+class B(A):
+    def show(self):
+        print("Class B ")
+        
+class C(A):
+    def dislay2(self):
+        print("class C")
+        
+class D(B,C):
+    def show2(self):
+        print("class D")
+    
+#ob=D()
+ob.display()
+ob.show()
+ob.display1()
+ob.show1()
+
+----
+
+
++*Out[22]:*+
+----
+Class A
+Class B 
+
+
+    ---------------------------------------------------------------------------
+
+    AttributeError                            Traceback (most recent call last)
+
+    Cell In[22], line 20
+         18 ob.display()
+         19 ob.show()
+    ---> 20 ob.display1()
+         21 ob.show1()
+    
+
+    AttributeError: 'D' object has no attribute 'display1'
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----

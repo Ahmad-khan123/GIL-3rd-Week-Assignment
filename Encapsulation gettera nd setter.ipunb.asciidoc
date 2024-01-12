@@ -1,0 +1,190 @@
++*In[17]:*+
+[source, ipython3]
+----
+
+class Person:
+    def __init__(self, name, age):
+        self.__name = name  # Encapsulated attribute
+        self.__age = age    # Encapsulated attribute
+
+    # Getter methods
+    def get_name(self):
+        return self.__name
+
+    def get_age(self):
+        return self.__age
+
+    # Setter methods
+    def set_name(self, new_name):
+        self.__name = new_name
+
+    def set_age(self, new_age):
+        if new_age >= 0:
+            self.__age = new_age
+        else:
+            print("Invalid age")
+
+# Example usage
+person = Person("Ahamd khan", 25)
+print(person.get_name())  
+print(person.get_age())   
+person.set_name("Khan")
+person.set_age(30)
+print(person.get_name())  
+print(person.get_age())   
+
+   
+        
+    
+        
+----
+
+
++*Out[17]:*+
+----
+Ahamd khan
+25
+Khan
+30
+----
+
+
++*In[12]:*+
+[source, ipython3]
+----
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Encapsulated attribute
+
+    @property
+    def balance(self):
+        return self.__balance
+
+    @balance.setter
+    def balance(self, new_balance):
+        if new_balance >= 0:
+            self.__balance = new_balance
+        else:
+            print("Invalid balance")
+
+# Example usage
+account = BankAccount(490)
+print(account.balance)  # Using the getter
+account.balance = 3000   # Using the setter
+print(account.balance)  # Using the getter
+
+----
+
+
++*Out[12]:*+
+----
+490
+3000
+----
+
+
++*In[18]:*+
+[source, ipython3]
+----
+class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width    # Encapsulated attribute
+        self.__height = height  # Encapsulated attribute
+
+    @property
+    def width(self):
+        return self.__width
+
+    @width.setter
+    def width(self, new_width):
+        if new_width > 0:
+            self.__width = new_width
+        else:
+            print("Invalid width")
+
+    @property
+    def height(self):
+        return self.__height
+
+    @height.setter
+    def height(self, new_height):
+        if new_height > 0:
+            self.__height = new_height
+        else:
+            print("Invalid height")
+
+# Example usage
+rectangle = Rectangle(10, 5)
+print(rectangle.width)    
+print(rectangle.height)   
+rectangle.width = 8
+rectangle.height = 6
+print(rectangle.width)    
+print(rectangle.height)   
+
+----
+
+
++*Out[18]:*+
+----
+10
+5
+8
+6
+----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+class Car:
+    def __init__(self, make, model):
+        self.__make = make      # Encapsulated attribute
+        self.__model = model    # Encapsulated attribute
+        self.__engine_status = False
+
+    # Getter methods
+    def get_make(self):
+        return self.__make
+
+    def get_model(self):
+        return self.__model
+
+    def get_engine_status(self):
+        return self.__engine_status
+
+    # Setter method
+    def set_engine_status(self, status):
+        self.__engine_status = status
+
+    # Encapsulated method
+    def start_engine(self):
+        print("Engine started")
+        self.__engine_status = True
+
+# Example usage
+car = Car("Toyota", "Camry")
+print(car.get_make())          # Output: Toyota
+print(car.get_model())         # Output: Camry
+print(car.get_engine_status())  # Output: False
+car.start_engine()
+print(car.get_engine_status())  # Output: True
+
+----
+
+
++*Out[19]:*+
+----
+Toyota
+Camry
+False
+Engine started
+True
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
